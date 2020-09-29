@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RadioButtons">
+
+    <TextView
+        android:id="@+id/chooseOneBread"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="اختيار نوع الخبز:"
+        android:textColor="#000000"
+        android:layout_centerInParent="true"
+        android:textSize="24dp"/>
+
+
+    <RadioGroup
+        android:id="@+id/multipleBread"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/chooseOneBread"
+        android:layout_marginTop="25dp">
+
+
+        <RadioButton
+            android:id="@+id/bread"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="خبز"
+            android:textSize="18dp"/>
+
+        <RadioButton
+            android:id="@+id/saj"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="صاج"
+            android:textSize="18dp"/>
+
+        <RadioButton
+            android:id="@+id/sandwich"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="صمون"
+            android:textSize="18dp"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/orderNowButtonForRadioButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:layout_below="@id/multipleBread"
+        android:text="إطلب"/>
+</RelativeLayout>

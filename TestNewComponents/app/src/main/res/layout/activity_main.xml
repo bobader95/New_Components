@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/switchButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/radiobuttonsButton"
+        android:layout_centerHorizontal="true"
+        android:ems="7"
+        android:text="Swtich"
+        android:textAllCaps="false"
+        android:layout_marginBottom="30dp"
+        />
+
+    <Button
+        android:id="@+id/seekbarButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Seekbar"
+        android:textAllCaps="false"
+        android:layout_centerInParent="true"
+        android:ems="7"
+        />
+
+    <Button
+        android:layout_below="@+id/seekbarButton"
+        android:id="@+id/checkboxButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CheckBox"
+        android:textAllCaps="false"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:ems="7"
+        />
+
+    <Button
+        android:layout_above="@+id/seekbarButton"
+        android:id="@+id/radiobuttonsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Radio Buttons"
+        android:textAllCaps="false"
+        android:ems="7"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        />
+
+    <Button
+        android:id="@+id/FAB"
+        android:layout_below="@id/checkboxButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FAB"
+        android:ems="7"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        />
+
+    <Button
+        android:id="@+id/myApplication"
+        android:layout_below="@id/FAB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My Application"
+        android:textAllCaps="false"
+        android:ems="7"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        />
+
+
+</RelativeLayout>
