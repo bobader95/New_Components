@@ -6,20 +6,23 @@ import android.os.Bundle;
 import android.widget.TextView;
 
 public class SeekBar extends AppCompatActivity {
-    private android.widget.SeekBar seekBar;
-    private TextView textView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_seek_bar);
 
-        textView = findViewById(R.id.changableText);
-        seekBar =  findViewById(R.id.greenSeekBar1);
+        final TextView textView = findViewById(R.id.changableText);
+        final TextView counter = findViewById(R.id.textView);
+        android.widget.SeekBar seekBar =  findViewById(R.id.greenSeekBar1);
+
 
 
         seekBar.setOnSeekBarChangeListener(new android.widget.SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(android.widget.SeekBar seekBar, int i, boolean b) {
+
+                counter.setText(i+"");
+
                 String rateService = "تقييم الخدمة: ";
                 if(seekBar.getProgress()<=25){
                     textView.setText(rateService+"سيئة");

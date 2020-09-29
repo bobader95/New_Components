@@ -15,7 +15,6 @@
         android:duplicateParentState="false"
         android:max="100"
         android:outlineAmbientShadowColor="@android:color/black"
-        android:progress="50"
         android:progressTint="#8BAB0DEF"
         android:thumb="@drawable/isb_indicator_rounded_corners" />
 
@@ -28,6 +27,15 @@
         android:text="تقييم الخدمة: "
         android:textColor="@android:color/black"
         android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_below="@+id/greenSeekBar1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text=""
+        android:textColor="@android:color/black"/>
 
 
 </RelativeLayout>
